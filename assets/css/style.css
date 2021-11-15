@@ -71,23 +71,6 @@ main{
    padding-bottom: 1em;
 }
 
-h2{
-   color: #000;
-   font-family: 'Maven Pro', sans-serif;
-   font-weight: 700;
-   font-size: 15px;
-   text-align: center;
-   border: 5px;
-   border-spacing: 10px;
-   border-style: solid;
-   border-color: #6A0000;
-   height: 85px;
-   width: 265px;
-   margin-left: auto;
-   margin-right: auto;
-   line-height: 1.5;
-}
-
 /* Buttons */
 h3{
    color: #FFF;
