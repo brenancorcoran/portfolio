@@ -19,7 +19,7 @@ main{
     border: 5px;
     border-style: solid;
     border-color: #6A0000;
-    height: 780px;
+    max-height: 780px;
     width: 345px;
     border-radius: 4em;
     padding-top: 30px;
@@ -109,7 +109,7 @@ h3{
     }
 
     .frame{
-        height: 945px;
+        max-height: 945px;
         width: 705px;
     }
 }
