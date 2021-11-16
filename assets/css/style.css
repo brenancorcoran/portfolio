@@ -34,8 +34,6 @@ main{
     outline: 8px solid black;
 }
 
-
-
 .picture{
     text-align: center;
 }
@@ -46,10 +44,11 @@ main{
     font-weight: 700;
     font-size: 25px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 /* Biography */
-h2{
+.bio-desc{
    color: #000;
    font-family: 'Maven Pro', sans-serif;
    font-weight: 700;
@@ -59,11 +58,15 @@ h2{
    border-spacing: 10px;
    border-style: solid;
    border-color: #6A0000;
-   height: 85px;
    width: 265px;
    margin-left: auto;
    margin-right: auto;
    line-height: 1.5;
+
+   list-style-type: none;
+   padding-left: 0;
+   padding-top: 1em;
+   padding-bottom: 1em;
 }
 
 /* Buttons */
