@@ -96,6 +96,18 @@ h3 {
   text-decoration: none;
 }
 
+.home-page-button {
+  padding: 15px;
+  text-decoration: none;
+}
+
+.home-page-button h3{
+  height: 45px;
+  line-height: 45px;
+}
+
+/* Resume */
+
 /* Tablet and up*/
 @media (min-width: 768px) {
   body {
