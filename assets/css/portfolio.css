@@ -1,11 +1,22 @@
 /* =====HOME PAGE===== */
 
+.header {
+    background-color: #23395B;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-bottom: 25px;
+}
+
 .header h1{
     display: grid;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 84px;
     font-weight: 600;
+    color: #FFFD98;
+    margin-bottom: 0;
 }
 
 .header h2 {
@@ -14,16 +25,17 @@
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: 400;
+    color: #fff;
 }
 
 .about-me-btn {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    background-color: #ffffff;
-    border: 2px solid #000000;
+    background-color: #fff;
+    border: 2px solid #D81E5B;
     border-radius: 10px;
-    box-shadow: #252525 4px 4px 0 0;
-    color: #000000;
+    box-shadow: #D81E5B 4px 4px 0 0;
+    color: #D81E5B;
     cursor: pointer;
     display: grid;
     margin: auto;
@@ -35,6 +47,7 @@
     touch-action: manipulation;
     width: 150px;
     padding: 0 20px;
+    margin-top: 50px;
 }
 
 .about-me-btn:hover {
@@ -114,4 +127,27 @@
     border-radius: 50%;
 }
 
+.scroll-down {
+    color: #D81E5B;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    align-items: center;
+    gap: 5px;
+    margin-left: 5%;
+    margin-top: 15px;
+}
 
+.scroll-down h3 {
+    display: grid;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.scroll-down img {
+    display: inline;
+    width: 25px;
+}
