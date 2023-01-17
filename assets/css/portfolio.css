@@ -1,0 +1,11 @@
+/* =====HOME PAGE===== */
+
+body h1{
+    display: grid;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 84px;
+    font-weight: 600;
+}
+
+
