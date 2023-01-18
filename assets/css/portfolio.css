@@ -1,12 +1,15 @@
 /* =====HOME PAGE===== */
 
+nav {
+  margin: -8px;
+}
+
 #navbar {
   display: grid;
   min-height: 100px;
-  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
   background-color: #fff;
   grid-gap: 1em;
-  padding: 0 40px;
   -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
   -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
   box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
@@ -14,14 +17,30 @@
 
 .logo {
   display: grid;
-  justify-content: start;
-  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: fit-content;
+
 }
 
 .logo img {
+  display: grid;
   width: 75px;
   border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
 }
+
+.portfolio-header {
+    display: grid;
+    font-family: 'Roboto', serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    align-items: center;
+  }
 
 #links {
   display: grid;
@@ -65,125 +84,9 @@
   text-decoration: none;
 }
 
-#reverse-1 {
-  display: none;
-}
-
-/* =======================
-******* Mobile Menu ******
-========================*/
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #32695c;
-  overflow-x: hidden;
-  transition: 0.5s;
-  letter-spacing: 2px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 22px;
-  color: #fff;
-  display: block;
-  transition: 0.3s;
-  padding-top: 25px;
-}
-
-.sidenav a:hover {
-  color: #04265b;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-a {
-  font-family: 'Roboto', sans-serif;
-}
-
-.sidenav img {
-  width: 150px;
-  margin-left: -18px;
-  border-bottom: 2px solid white;
-}
-
-.mobile-btn {
-  font-size: 40px;
-  cursor: pointer;
-  margin-top: 60px;
-}
-
-/* Mobile to Tablet  */
-@media (min-width: 320px) and (max-width: 900px) {
-  #links,
-  .mobile-menu {
-    display: none;
-  }
-
-  .logo {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0;
-  }
-
-  .logo .logo-img {
-    text-align: center;
-  }
-
-  .jjc-title-header {
-    display: none;
-  }
-
-  #reverse-1 {
-    display: none;
-  }
-}
-
-/* Tablet to Desktop */
-@media (min-width: 900px) {
-  .mobile-btn {
-    display: none;
-  }
-
-  header {
-    background-color: #000;
-  }
-
-  .jjc-title-header {
-    font-family: 'Roboto', serif;
-    font-size: 20px;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding-top: 20px;
-    text-align: center;
-  }
-
-  #reverse {
-    place-content: center;
-  }
-
-  #reverse-1 {
-    display: grid;
-    place-content: center;
-    margin-right: 10px;
-  }
-}
-
 .hero {
   background-color: #23395b;
+  position: fixed;
   left: 0;
   right: 0;
   padding-bottom: 25px;
