@@ -1,153 +1,332 @@
 /* =====HOME PAGE===== */
 
-.header {
-    background-color: #23395B;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    padding-bottom: 25px;
+#navbar {
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+  background-color: #fff;
+  grid-gap: 1em;
+  padding: 0 40px;
+  -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
 }
 
-.header h1{
-    display: grid;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 84px;
-    font-weight: 600;
-    color: #FFFD98;
-    margin-bottom: 0;
+.logo {
+  display: grid;
+  justify-content: start;
+  align-content: center;
 }
 
-.header h2 {
-    display: grid;
+.logo img {
+  width: 75px;
+  border-radius: 50%;
+}
+
+#links {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#links a {
+  text-decoration: none;
+  color: #32695c;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: #000 solid 0.5px;
+  box-shadow: -2px 2px 0.5px rgb(56, 56, 56);
+  min-width: max-content;
+}
+
+#links a:hover {
+  color: #32695c;
+  text-decoration: none;
+  background-color: #87ada5;
+}
+
+#links a:nth-child(5) {
+  color: #fff;
+  background-color: #32695c;
+  text-decoration: none;
+}
+
+#links a:nth-child(5):hover {
+  color: #87ada5;
+  text-decoration: none;
+}
+
+#reverse-1 {
+  display: none;
+}
+
+/* =======================
+******* Mobile Menu ******
+========================*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #32695c;
+  overflow-x: hidden;
+  transition: 0.5s;
+  letter-spacing: 2px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 22px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  padding-top: 25px;
+}
+
+.sidenav a:hover {
+  color: #04265b;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+.sidenav img {
+  width: 150px;
+  margin-left: -18px;
+  border-bottom: 2px solid white;
+}
+
+.mobile-btn {
+  font-size: 40px;
+  cursor: pointer;
+  margin-top: 60px;
+}
+
+/* Mobile to Tablet  */
+@media (min-width: 320px) and (max-width: 900px) {
+  #links,
+  .mobile-menu {
+    display: none;
+  }
+
+  .logo {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0;
+  }
+
+  .logo .logo-img {
     text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: 400;
-    color: #fff;
+  }
+
+  .jjc-title-header {
+    display: none;
+  }
+
+  #reverse-1 {
+    display: none;
+  }
+}
+
+/* Tablet to Desktop */
+@media (min-width: 900px) {
+  .mobile-btn {
+    display: none;
+  }
+
+  header {
+    background-color: #000;
+  }
+
+  .jjc-title-header {
+    font-family: 'Roboto', serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  #reverse {
+    place-content: center;
+  }
+
+  #reverse-1 {
+    display: grid;
+    place-content: center;
+    margin-right: 10px;
+  }
+}
+
+.hero {
+  background-color: #23395b;
+  left: 0;
+  right: 0;
+  padding-bottom: 25px;
+}
+
+.hero h1 {
+  display: grid;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 84px;
+  font-weight: 600;
+  color: #fffd98;
+  margin-bottom: 0;
+}
+
+.hero h2 {
+  display: grid;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #fff;
 }
 
 .about-me-btn {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    background-color: #fff;
-    border: 2px solid #D81E5B;
-    border-radius: 10px;
-    box-shadow: #D81E5B 4px 4px 0 0;
-    color: #D81E5B;
-    cursor: pointer;
-    display: grid;
-    margin: auto;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    touch-action: manipulation;
-    width: 150px;
-    padding: 0 20px;
-    margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 2px solid #d81e5b;
+  border-radius: 10px;
+  box-shadow: #d81e5b 4px 4px 0 0;
+  color: #d81e5b;
+  cursor: pointer;
+  display: grid;
+  margin: auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  width: 150px;
+  padding: 0 20px;
+  margin-top: 50px;
 }
 
 .about-me-btn:hover {
-    background-color: #d0d0d0;
+  background-color: #d0d0d0;
 }
 
 .popup .overlay {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.7);
-    z-index: 1;
-    display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
 }
 
 .popup .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: #fff;
-    width: 450px;
-    height: fit-content;
-    z-index: 2;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 450px;
+  height: fit-content;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .popup .content h1 {
-    display: grid;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    font-weight: 600;
+  display: grid;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
 }
 
 .popup .content p {
-    display: grid;
-    text-align: left;
-    font-family: 'Playfair Display', serif;
-    font-size: 16px;
-    font-weight: 400;
+  display: grid;
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .popup .close-btn {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 30px;
-    height: 30px;
-    background: #222;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 50%;
-    cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .popup.active .overlay {
-    display: block;
+  display: block;
 }
 
 .popup.active .content {
-    transistion:all 100ms ease-in-out;
-    transform:translate(-50%, -50%) scale(1);
-
+  transistion: all 100ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .portfolio-pic {
-    width: 150px;
-    border-radius: 50%;
+  width: 150px;
+  border-radius: 50%;
 }
 
 .scroll-down {
-    color: #D81E5B;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: fit-content;
-    align-items: center;
-    gap: 5px;
-    margin-left: 5%;
-    margin-top: 15px;
+  color: #d81e5b;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: fit-content;
+  align-items: center;
+  gap: 5px;
+  margin-left: 5%;
+  margin-top: 15px;
 }
 
 .scroll-down h3 {
-    display: grid;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 400;
+  display: grid;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .scroll-down img {
-    display: inline;
-    width: 25px;
+  display: inline;
+  width: 25px;
 }
