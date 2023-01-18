@@ -2,7 +2,6 @@
 
 /* <-- HEADER --> */
 header {
-
 }
 
 nav {
@@ -263,27 +262,57 @@ nav {
 /* =====ABOUT ME===== */
 
 .about-me {
-  margin-top: 100px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.about-me-header {
+  margin-top: 50px;
+  display: grid;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  color: #23395b;
+  margin-bottom: 0px;
 }
 
 /* <--- ABOUT ME TEXT ---> */
 
-.about-me-text h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #000;
-  text-align: center;
+.about-me-text {
+  width: 625px;
+  place-content: center;
 }
 
-.about-me-skills h1{
+.about-me-text h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   color: #000;
   text-align: center;
+  padding-bottom: 10px;
 }
+
+.about-me p {
+  display: grid;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  display: inline !important;
+  line-height: 2em;
+}
+
+.about-me-skills h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+}
+
+
