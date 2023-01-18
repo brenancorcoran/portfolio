@@ -1,19 +1,22 @@
 /* =====HOME PAGE===== */
 
 /* <-- HEADER --> */
+header {
+
+}
+
 nav {
   margin: -8px;
 }
 
 #navbar {
   display: grid;
+  position: fixed;
+  width: 100%;
   min-height: 100px;
   grid-auto-flow: column;
   background-color: #fff;
   grid-gap: 1em;
-  -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
-  -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
-  box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
 }
 
 .logo {
@@ -72,9 +75,10 @@ nav {
 
 .hero {
   background-color: #23395b;
-  position: fixed;
-  left: 0;
-  right: 0;
+  display: grid;
+  padding-top: 100px;
+  margin-left: -8px;
+  margin-right: -8px;
   padding-bottom: 25px;
 }
 
@@ -258,4 +262,28 @@ nav {
 
 /* =====ABOUT ME===== */
 
+.about-me {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* <--- ABOUT ME TEXT ---> */
+
+.about-me-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+}
+
+.about-me-skills h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+}
