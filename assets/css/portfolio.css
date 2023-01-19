@@ -49,6 +49,7 @@ nav {
   grid-auto-flow: column;
   grid-gap: 1.5em;
   font-family: 'Roboto', sans-serif;
+  border: green solid 1px;
 }
 
 #links a {
@@ -68,6 +69,28 @@ nav {
 #links a:hover {
   color: #d81e5b;
   text-decoration: none;
+}
+
+.header-social-btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  place-items: center;
+  border: #000 solid 1px;
+}
+
+.header-linkedin {
+  border: red solid 1px;
+}
+
+.header-linkedin img {
+  display: flex;
+  width: 40px;
+}
+
+.header-github img {
+  display: flex;
+  width: 40px;
 }
 
 /* <-- HERO --> */
@@ -225,7 +248,7 @@ nav {
 }
 
 .popup.active .content {
-  transistion: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -260,30 +283,41 @@ nav {
 }
 
 /* =====ABOUT ME===== */
+.about-me-section {
+  background-color: #fafafa;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
 
 .about-me {
-  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
+  width: 92%;
+  max-width: 120rem;
+  grid-gap: 5rem;
+  justify-items: center;
 }
 
 .about-me-header {
-  margin-top: 50px;
+  margin-top: 0px;
+  padding-top: 50px;
   display: grid;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 600;
   color: #23395b;
-  margin-bottom: 0px;
+  padding-bottom: 25px;
 }
 
 /* <--- ABOUT ME TEXT ---> */
 
 .about-me-text {
+  display: grid;
   width: 625px;
-  place-content: center;
+  height: auto;
 }
 
 .about-me-text h2 {
@@ -293,7 +327,7 @@ nav {
   text-transform: uppercase;
   color: #000;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .about-me p {
@@ -307,12 +341,59 @@ nav {
   line-height: 2em;
 }
 
+.contact-btn {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  color: #000;
+  cursor: pointer;
+  display: grid;
+  margin: auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  width: 150px;
+  padding: 0 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.about-me-skills {
+  display: grid;
+  width: 625px;
+  height: auto;
+}
+
 .about-me-skills h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   color: #000;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
-
+.skills a {
+  display: inline-flex;
+  margin: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: rgb(222, 222, 222);
+  width: fit-content;
+}
