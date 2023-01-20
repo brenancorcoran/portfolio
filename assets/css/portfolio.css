@@ -12,10 +12,11 @@ nav {
   display: grid;
   position: fixed;
   width: 100%;
-  min-height: 100px;
+  height: 100px;
   grid-auto-flow: column;
   background-color: #fff;
   align-items: center;
+  z-index: 1000;
 }
 
 .logo {
@@ -59,7 +60,7 @@ nav {
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 2px;
-  font-size: 16px;
+  font-size: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
@@ -100,12 +101,18 @@ nav {
 
 /* <-- HERO --> */
 
-.hero {
+.hero-section {
+  height: 100vh;
   background-color: #23395b;
   display: grid;
-  padding-top: 100px;
+  align-items: center;
   margin-left: -8px;
   margin-right: -8px;
+}
+
+.hero {
+  display: grid;
+  padding-top: 100px;
   padding-bottom: 25px;
 }
 
@@ -173,6 +180,34 @@ nav {
   border: #fff solid 1px;
   border-radius: 10px;
   padding: 5px;
+}
+
+.scroll-down {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: fit-content;
+  align-items: center;
+  gap: 5px;
+  margin-left: 50px;
+  padding-top: 50px;
+  position: absolute;
+  bottom: 3%;
+}
+
+.scroll-down h3 {
+  color: #d81e5b;
+  letter-spacing: 2px;
+  display: grid;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.scroll-down img {
+  display: inline;
+  width: 25px;
 }
 
 .popup .overlay {
@@ -262,31 +297,6 @@ nav {
   border-radius: 50%;
 }
 
-.scroll-down {
-  color: #d81e5b;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: fit-content;
-  align-items: center;
-  gap: 5px;
-  margin-left: 5%;
-  margin-top: 15px;
-}
-
-.scroll-down h3 {
-  display: grid;
-  text-align: left;
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.scroll-down img {
-  display: inline;
-  width: 25px;
-}
-
 /* =====ABOUT ME===== */
 .about-me-section {
   background-color: #fafafa;
@@ -317,10 +327,9 @@ nav {
   padding-bottom: 25px;
 }
 
-/* <--- ABOUT ME TEXT ---> */
+/* <-- ABOUT ME TEXT --> */
 
 .about-me-text {
-  display: grid;
   width: 625px;
   height: auto;
 }
@@ -328,10 +337,10 @@ nav {
 .about-me-text h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
   color: #000;
-  text-align: center;
+  text-align: left;
   padding-bottom: 15px;
 }
 
@@ -355,7 +364,6 @@ nav {
   color: #000;
   cursor: pointer;
   display: grid;
-  margin: auto;
   font-weight: 400;
   font-size: 18px;
   line-height: 50px;
@@ -368,8 +376,9 @@ nav {
   margin-bottom: 25px;
 }
 
+/* <-- ABOUT ME SKILLS --> */
+
 .about-me-skills {
-  display: grid;
   width: 625px;
   height: auto;
 }
@@ -377,10 +386,10 @@ nav {
 .about-me-skills h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
   color: #000;
-  text-align: center;
+  text-align: left;
   padding-bottom: 15px;
 }
 
@@ -401,4 +410,25 @@ nav {
   padding-left: 10px;
   background-color: rgb(222, 222, 222);
   width: fit-content;
+}
+
+/* =====PROJECTS===== */
+.projects-section {
+  background-color: #23395b;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.projects-header {
+  margin-top: 0px;
+  padding-top: 50px;
+  display: grid;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  color: #fff;
+  padding-bottom: 25px;
 }
