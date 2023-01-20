@@ -316,6 +316,8 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .about-me {
@@ -424,6 +426,8 @@ nav {
   grid-template-columns: 1fr;
   justify-items: center;
   height: 75vh;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .projects-header {
@@ -435,5 +439,4 @@ nav {
   font-size: 54px;
   font-weight: 600;
   color: #fff;
-  padding-bottom: 25px;
 }
