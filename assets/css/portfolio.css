@@ -173,19 +173,11 @@ nav {
   padding: 9.25px 5px 9.25px 5px;
 }
 
-.linkedin-logo img:hover {
-  border: #d81e5b solid 1px;
-}
-
 .github-logo img {
   width: 100px;
   border: #fff solid 1px;
   border-radius: 10px;
   padding: 5px;
-}
-
-.github-logo img:hover {
-  border: #d81e5b solid 1px;
 }
 
 .scroll-down {
@@ -396,6 +388,19 @@ nav {
 .about-me-skills {
   width: 625px;
   height: auto;
+}
+
+.skills .programming {
+  margin-bottom: 2.5em;
+}
+
+.skills p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  text-align: left;
 }
 
 .skills a {
