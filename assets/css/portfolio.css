@@ -136,30 +136,29 @@ nav {
 }
 
 .about-me-btn {
+  margin: auto;
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
+  border: #fff solid 1px;
+  box-shadow: 4px 4px 4px #d81e5b;
   background-color: #fff;
-  border: 2px solid #000;
+  color: #23395b;
   border-radius: 10px;
-  box-shadow: #222 4px 4px 0 0;
-  color: #000;
   cursor: pointer;
   display: grid;
-  margin: auto;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 20px;
   line-height: 50px;
   text-align: center;
   text-decoration: none;
-  touch-action: manipulation;
-  width: 150px;
+  min-width: 150px;
+  max-width: fit-content;
   padding: 0 20px;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 70px;
 }
 
 .about-me-btn:hover {
-  background-color: #d0d0d0;
+  border: #d81e5b solid 1px;
 }
 
 .social-buttons {
@@ -175,11 +174,19 @@ nav {
   padding: 9.25px 5px 9.25px 5px;
 }
 
+.linkedin-logo img:hover {
+  border: #d81e5b solid 1px;
+}
+
 .github-logo img {
   width: 100px;
   border: #fff solid 1px;
   border-radius: 10px;
   padding: 5px;
+}
+
+.github-logo img:hover {
+  border: #d81e5b solid 1px;
 }
 
 .scroll-down {
@@ -222,18 +229,19 @@ nav {
 }
 
 .popup .content {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  background: #fff;
-  width: 450px;
+  background: #fafafa;
+  width: 650px;
   height: fit-content;
-  z-index: 2;
+  z-index: 1001;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
   box-sizing: border-box;
   border-radius: 10px;
+  border: #000 solid 0.5px;
 }
 
 .popup .content h1 {
@@ -244,11 +252,18 @@ nav {
   font-weight: 600;
 }
 
+.portfolio-pic {
+  width: 150px;
+  border-radius: 50%;
+}
+
 .about-me-social {
   display: flex;
   place-content: center;
   gap: 15px;
-  margin-top: 25px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 
 .about-me-linkedin img {
@@ -265,6 +280,8 @@ nav {
   font-family: 'Playfair Display', serif;
   font-size: 16px;
   font-weight: 500;
+  display: inline !important;
+  width: fit-content;
 }
 
 .popup .close-btn {
@@ -290,11 +307,6 @@ nav {
 .popup.active .content {
   transition: all 100ms ease-in-out;
   transform: translate(-50%, -50%) scale(1);
-}
-
-.portfolio-pic {
-  width: 150px;
-  border-radius: 50%;
 }
 
 /* =====ABOUT ME===== */
@@ -324,7 +336,6 @@ nav {
   font-size: 54px;
   font-weight: 600;
   color: #23395b;
-  padding-bottom: 25px;
 }
 
 /* <-- ABOUT ME TEXT --> */
@@ -334,14 +345,13 @@ nav {
   height: auto;
 }
 
-.about-me-text h2 {
+.about-me h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 800;
   text-transform: uppercase;
   color: #000;
   text-align: left;
-  padding-bottom: 15px;
 }
 
 .about-me p {
@@ -357,23 +367,27 @@ nav {
 
 .contact-btn {
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  background-color: #fff;
-  border: 2px solid #000;
+  border: #fff solid 1px;
+  box-shadow: 4px 4px 4px #d81e5b;
+  background-color: #23395b;
+  color: #fff;
   border-radius: 10px;
-  color: #000;
   cursor: pointer;
   display: grid;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 20px;
   line-height: 50px;
   text-align: center;
   text-decoration: none;
-  touch-action: manipulation;
-  width: 150px;
+  min-width: 150px;
+  max-width: fit-content;
   padding: 0 20px;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 70px;
+}
+
+.contact-btn:hover {
+  border: #d81e5b solid 1px;
 }
 
 /* <-- ABOUT ME SKILLS --> */
@@ -381,16 +395,6 @@ nav {
 .about-me-skills {
   width: 625px;
   height: auto;
-}
-
-.about-me-skills h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #000;
-  text-align: left;
-  padding-bottom: 15px;
 }
 
 .skills a {
@@ -419,6 +423,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  height: 75vh;
 }
 
 .projects-header {
